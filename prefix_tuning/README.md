@@ -1,6 +1,6 @@
 # Prefix-tuning
 Follwing [Prefix-Tuning: Optimizing Continuous Prompts for Generation](https://arxiv.org/pdf/2101.00190), we implement codes for prefix-tuning. \
-[Li and Liang](https://arxiv.org/pdf/2101.00190) prepended the prefix to the key and value representations, but we chose to prepend the prefix to the representations right before the self-attention projection.
+In the paper, we chose to prepend the prefix to the representations right before the self-attention projection. Here, for the general use, we provide the codes for the prefix prepended to the key and value representations as [Li and Liang](https://arxiv.org/pdf/2101.00190) did.
 
 You can choose 'model' among ['pmonobert', 'p0colbert', 'p2colbert', 'pcolbert', 'p0twinbert', 'p2twinbert', 'ptwinbert']. \
 When you choose 'model' starting with 'p0', you can train the same prefixes for both query and document. \
